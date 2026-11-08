@@ -1,0 +1,13 @@
+snowflake_data_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: <orgname-accountname>        # e.g. ABCDEFG-XY12345
+      user: <dbt_user>
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: <role>
+      database: FINANCE_DB
+      schema: RAW
+      warehouse: FINANCE_WH
+      threads: 4

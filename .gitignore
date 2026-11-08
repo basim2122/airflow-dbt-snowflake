@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+.dbt_venv/
+venv/
+
+# Airflow runtime and secrets
+.airflow/
+airflow.cfg
+airflow.db
+logs/
+*.log
+*.generated
+
+# Local credentials
+.env
+.env.*
+!.env.example
+config/profiles.yml
+config/.user.yml
+
+# dbt generated artifacts
+dbt/**/target/
+dbt/**/dbt_packages/
+dbt/**/logs/
+dbt/*.tmp
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
